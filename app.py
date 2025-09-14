@@ -9,8 +9,13 @@ from openai import OpenAI
 # ----------------------------
 # OpenAI client
 # ----------------------------
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+api_key = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
 
+if not api_key:
+    st.error("❌ OpenAI API key not found. Please set it in Streamlit Secrets or environment variable.")
+    st.stop()
+
+client = OpenAI(api_key=api_key)
 # ----------------------------
 # Load Questions from JSON
 # ----------------------------
