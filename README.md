@@ -15,6 +15,8 @@ and generates a professional feedback report at the end.
 
 ---
 
+<img width="1470" height="956" alt="Screenshot 2025-09-14 at 1 52 45 PM" src="https://github.com/user-attachments/assets/9a50a0fe-c15e-422c-b51d-e88198989e0b" />
+
 ## 🛠️ Setup
 
 ```bash
@@ -28,4 +30,3 @@ source venv/bin/activate   # (Windows: venv\Scripts\activate)
 # Install dependencies
 pip install -r requirements.txt
 
-<img width="1470" height="956" alt="Screenshot 2025-09-14 at 1 52 45 PM" src="https://github.com/user-attachments/assets/0cf57371-5637-49a0-870a-59209acb8338" />
