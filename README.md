@@ -28,4 +28,4 @@ source venv/bin/activate   # (Windows: venv\Scripts\activate)
 # Install dependencies
 pip install -r requirements.txt
 
-<img width="1470" height="956" alt="Screenshot 2025-09-14 at 1 52 45 PM" src="https://github.com/user-attachments/assets/7b22beb1-4a37-4f21-af2f-64ecc54bbe1c" />
+<img width="1470" height="956" alt="Screenshot 2025-09-14 at 1 52 45 PM" src="https://github.com/user-attachments/assets/0cf57371-5637-49a0-870a-59209acb8338" />
