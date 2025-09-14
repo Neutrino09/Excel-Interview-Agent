@@ -1,0 +1,163 @@
+[
+    {
+      "id": "q_excel_sumif",
+      "prompt": "Write an Excel formula to sum values in B2:B100 only where A2:A100 equals 'West'.",
+      "type": "formula",
+      "expected": ["=SUMIF(A2:A100, \"West\", B2:B100)"],
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_avgif",
+      "prompt": "Write an Excel formula to calculate the average of values in C2:C100 where D2:D100 equals 'Completed'.",
+      "type": "formula",
+      "expected": ["=AVERAGEIF(D2:D100, \"Completed\", C2:C100)"],
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_countif",
+      "prompt": "Write a formula to count how many times 'Yes' appears in column E.",
+      "type": "formula",
+      "expected": ["=COUNTIF(E:E, \"Yes\")"],
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_if",
+      "prompt": "Write a formula to check if the value in A2 is greater than 100. If yes, return 'High', otherwise return 'Low'.",
+      "type": "formula",
+      "expected": ["=IF(A2>100, \"High\", \"Low\")"],
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_vlookup",
+      "prompt": "How do you use VLOOKUP to find the price of an item in column B when the item code is in column A?",
+      "type": "formula",
+      "expected": ["=VLOOKUP(item_code, A:B, 2, FALSE)"],
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_index_match",
+      "prompt": "Explain how INDEX and MATCH can be used together instead of VLOOKUP.",
+      "type": "text",
+      "reference": "INDEX returns the value at a given row/column position. MATCH finds the position of a value. Together, they look up values flexibly.",
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_iferror",
+      "prompt": "Write an Excel formula using IFERROR to display 'Not Found' if a VLOOKUP returns an error.",
+      "type": "formula",
+      "expected": ["=IFERROR(VLOOKUP(A2, B:C, 2, FALSE), \"Not Found\")"],
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_concat",
+      "prompt": "Write a formula to combine first name in A2 and last name in B2 with a space in between.",
+      "type": "formula",
+      "expected": ["=CONCAT(A2, \" \", B2)", "=A2 & \" \" & B2"],
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_left",
+      "prompt": "Write a formula to extract the first 5 characters from cell A2.",
+      "type": "formula",
+      "expected": ["=LEFT(A2, 5)"],
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_right",
+      "prompt": "Write a formula to extract the last 3 characters from cell B2.",
+      "type": "formula",
+      "expected": ["=RIGHT(B2, 3)"],
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_mid",
+      "prompt": "Write a formula to extract 4 characters from cell A2 starting at the 2nd character.",
+      "type": "formula",
+      "expected": ["=MID(A2, 2, 4)"],
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_trim",
+      "prompt": "Which function removes all extra spaces from text in Excel?",
+      "type": "text",
+      "reference": "The TRIM function removes all extra spaces from text.",
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_proper",
+      "prompt": "Which function capitalizes the first letter of each word in Excel?",
+      "type": "text",
+      "reference": "The PROPER function capitalizes the first letter of each word.",
+      "level": "easy",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_pivot",
+      "prompt": "What steps would you take to create a pivot table to summarize sales by region and month?",
+      "type": "text",
+      "reference": "Select the data range, Insert → PivotTable, drag Region to Rows, Month to Columns, and Sales to Values.",
+      "level": "hard",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_conditional",
+      "prompt": "How do you apply conditional formatting to highlight values greater than 1000 in column C?",
+      "type": "text",
+      "reference": "Select column C, go to Conditional Formatting → Highlight Cell Rules → Greater Than, enter 1000.",
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_data_validation",
+      "prompt": "How do you restrict entries in column A to only allow values between 1 and 10?",
+      "type": "text",
+      "reference": "Select column A, go to Data → Data Validation, choose Whole number, between 1 and 10.",
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_charts",
+      "prompt": "How do you create a chart in Excel to display monthly sales trends?",
+      "type": "text",
+      "reference": "Select the data, go to Insert → Chart, and choose a Line chart to show trends over months.",
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_named_range",
+      "prompt": "What is a named range and how can it be useful in Excel formulas?",
+      "type": "text",
+      "reference": "A named range is a descriptive name for a group of cells. It makes formulas easier to read and manage.",
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_table",
+      "prompt": "How do you convert a data range into an Excel Table and why would you do this?",
+      "type": "text",
+      "reference": "Select the range, Insert → Table. Tables make data easier to manage, automatically expand, and improve formula readability.",
+      "level": "medium",
+      "topic": "excel"
+    },
+    {
+      "id": "q_excel_powerquery",
+      "prompt": "What is Power Query in Excel and what is it used for?",
+      "type": "text",
+      "reference": "Power Query is a tool for importing, cleaning, and transforming data before analysis.",
+      "level": "hard",
+      "topic": "excel"
+    }
+  ]
+  
